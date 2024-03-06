@@ -1,7 +1,22 @@
 <template>
-
+    <div>
+{{ data }}
+    </div>
 </template>
 
-<style>
+<script setup>
+import {ref, onMounted, onBeforeMount} from 'vue';
+const pokemon = ref("");
+async function getPokemon(){
+    let res = await fetch ('https://data.cityofnewyork.us/resource/uiay-nctu.json');
+    let data = await res.json();
+    pokemon.value = data;
+}
+onBeforeMount(() =>{
+    getPokemon();
+})
+</script>
+
+<style scoped>
 
 </style>
