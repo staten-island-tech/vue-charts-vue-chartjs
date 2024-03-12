@@ -1,13 +1,13 @@
 <template>
   <div>
-
+    <h2> {{ street.name }}</h2>
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+const props = {
+  streets: Object,
+}
 </script>
 
 <style scoped>
