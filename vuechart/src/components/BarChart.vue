@@ -2,9 +2,7 @@
     <Bar
       id="my-chart-id"
       :options="chartOptions"
-      :data="chartData"></Bar>
- <div class="container" v-if="loaded" :data="chartData">  </div>
-  
+      :data="chartData"></Bar>   
   </template>
   
   <script>
@@ -13,17 +11,14 @@
   name: 'BarChart',
   components: { Bar },
   data: () => ({
-    loaded: false,
-    chartData: {
-        labels: ["b", "q", "m"]
-    }
+    loaded: true,
   }),
   async mounted () {
     this.loaded = false
 
     try {
       const { userlist } = await fetch('https://data.cityofnewyork.us/resource/uiay-nctu.json')
-      this.chartdata = userlist
+      this.chartData = userlist
 
 
       this.loaded = true

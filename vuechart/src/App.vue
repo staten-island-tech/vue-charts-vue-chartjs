@@ -4,6 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 import BarChart from '../src/components/BarChart.vue'
 
+
 /* export  {
   name: 'App',
   components: { BarChart }
