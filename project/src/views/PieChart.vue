@@ -9,7 +9,7 @@ import { Pie } from 'vue-chartjs'
 import * as chartConfig from '../components/chartConfig.ts'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
-  
+
 export default {
   name: 'App',
   components: {

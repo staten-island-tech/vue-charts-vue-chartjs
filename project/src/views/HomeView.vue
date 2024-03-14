@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { data } from '@/components/chartConfig';
+import { data } from '@/components/chartConfig.ts';
 import { ref, onMounted } from 'vue';
 const streets = ref('')
 async function getData(){
