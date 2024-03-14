@@ -2,33 +2,24 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
-import BarChart from '../src/components/BarChart.vue'
-
-
-/* export  {
-  name: 'App',
-  components: { BarChart }
-} */
 </script>
 
 <template>
   <header>
 
     <div class="wrapper">
-
-      <BarChart />
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/">homee</RouterLink>
+        <RouterLink to="/bar">bar chart</RouterLink>
 
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  <RouterView></RouterView>
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -88,5 +79,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
