@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="thing">
     ahdofs
   </div>
 </template>
@@ -9,5 +9,9 @@
 </script>
 
 <style scoped>
+
+.thing{
+  margin: 30px;
+}
 
 </style>
