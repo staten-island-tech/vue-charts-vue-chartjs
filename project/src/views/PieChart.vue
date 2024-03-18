@@ -2,7 +2,7 @@
     <h2> Boroughs Each Open Street Belong To </h2>
     <Pie :data="data" :options="options" />
 </template>
-  
+
 <script lang="ts">
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Pie } from 'vue-chartjs'
@@ -23,8 +23,11 @@ export default {
 
 <style scoped>
 *, body, html{
-    font-size: 90%;
-    height: max-content;
-    width: max-content;
+  height: max-content;
+  width: max-content;
+}
+h2{
+  margin: auto;
+  padding: 1%;
 }
 </style>
