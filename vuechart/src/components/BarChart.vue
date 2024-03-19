@@ -21,14 +21,20 @@ export default {
   async mounted () {
     this.loaded = false
   
-
     try {
       const { thedata } = await fetch('https://data.cityofnewyork.us/resource/uiay-nctu.json')
       this.chartData = thedata
+            this.loaded = true,
+      data();{
+        return {
+          chartData: {
+          labels: ['thedata.boroughname'] 
+        }, };
 
+      }
+        
 
-      this.loaded = true
-      console.log(chartData)
+      
     } catch (e) {
       console.error(e)
     }
