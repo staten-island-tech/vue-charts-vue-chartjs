@@ -1,4 +1,3 @@
-import {fdata} from "../components"
 export const data = {
   labels: ['Staten Island', 'Brooklyn', 'Manhattan', 'Queens', 'Bronx'],
   datasets: [

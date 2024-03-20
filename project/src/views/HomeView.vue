@@ -13,6 +13,8 @@ async function getData(){
   let fdata = await res.json()
   streets.value = fdata.results
   console.log(fdata);
+  console.log(fdata.length);
+  console.log(fdata[232].appronstre);
 }
 onMounted(()=>{
   getData()
