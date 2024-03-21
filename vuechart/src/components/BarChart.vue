@@ -14,6 +14,31 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 export default {
   name: 'BarChart',
   components: { Bar },
+  data() {
+    return {
+      chartData: {
+        labels: [ 'bk', 'si', 'm'],
+        datasets: [
+          {
+            label: 'boroughs',
+            backgroundColor: '#F6BDD1',
+            data: [40, 20, 12]
+          }
+        ]
+      }
+    }
+  }
+}
+  </script>
+
+<style scoped>
+.container{
+  width: 1000px;
+}
+</style>
+  <!-- export default {
+  name: 'BarChart',
+  components: { Bar },
   data: () => ({
     loaded: false,
     //chartData: null,
@@ -40,14 +65,8 @@ export default {
     }
   }
 }
-  </script>
 
-<style scoped>
-.container{
-  width: 1000px;
-}
-</style>
-  <!-- import { Bar } from "vue-chartjs"
+import { Bar } from "vue-chartjs"
   export default {
   name: 'BarChart',
   components: { Bar },
