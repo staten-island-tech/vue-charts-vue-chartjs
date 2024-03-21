@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2> {{ street.name }}</h2>
+    <h2> {{ streets.appronstre }}</h2>
   </div>
 </template>
 
