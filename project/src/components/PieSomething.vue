@@ -17,7 +17,3 @@ onMounted(()=>{
   getData()
 })
 </script>
-
-<style scoped>
-
-</style>

@@ -3,7 +3,7 @@ export const data = {
   datasets: [
     {
       backgroundColor: ['#AC92EB', '#4FC1E8', '#A0D568', '#FFCE54', '#ED5564'],
-      data: [40, 20, 80, 10, 34]
+      data: [14, 181, 147, 67, 12]
     }
   ]
 }  

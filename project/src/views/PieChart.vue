@@ -30,4 +30,4 @@ h2{
   margin: auto;
   padding: 1%;
 }
-</style>../components/chartConfig.vue../components/chartConfig.vue../components/chartConfig.ts
+</style>
