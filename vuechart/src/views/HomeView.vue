@@ -2,10 +2,8 @@
   <div class="container">
 
     <div class="card">
-        <p><h2 class="organization">{{orgname}}</h2></p> 
-        <p><h3 class="street">{{appronstre}}      </h3></p>
-        <h2 class="theborough">{{boroughname}}</h2>
-      </div>
+         <p><h3 >{{newcard.street}}     </h3></p>
+      <!--:key="" --></div>
 
     </div>
 
@@ -20,9 +18,14 @@ async function getData(){
           throw new Error (response.statusText);
       }
       const newcards = await response.json();
-      console.log(newcards.boroughname);
-  
-return newcards.appronstre, newcards.boroughname, newcards.orgname;
+       
+      newcards.forEach(a => {
+       const street = a.appronstre
+        const borough = a.boroughname
+
+              //console.log(street, borough);
+      });
+ 
   } catch (error) {
       console.log(error,"uh oh");
   }
@@ -35,8 +38,10 @@ getData(URL)
 
 <style scoped>
 
-.thing{
+.card{
   margin: 30px;
+  width: 40rem;
+  height: 40rem;
 }
 
 </style>

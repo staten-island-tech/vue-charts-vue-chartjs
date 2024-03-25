@@ -10,7 +10,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
       <nav>
         <RouterLink to="/">homee</RouterLink>
-        <RouterLink to="/bar">bar chart</RouterLink>
+        <RouterLink to="/bar">boroughs</RouterLink>
 
       </nav>
     </div>
