@@ -16,7 +16,8 @@ async function getData(){
   streets.value = fdata.results
   console.log(fdata);
   console.log(fdata.length);
-  console.log(fdata[232].appronstre);
+  console.log(fdata[22].appronstre);
+  console.log(fdata[213].orgname);
   // let i = 0; //this logs every appronstre object thing (commented out because it takes up too much space on the console log)
   // for(i=0; i<fdata.length; i++){
   //   console.log(fdata[i].appronstre);

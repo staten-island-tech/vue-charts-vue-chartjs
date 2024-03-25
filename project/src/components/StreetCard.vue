@@ -7,6 +7,7 @@
 <script>
 const props = {
   streets: Object,
+  borough: Object,
 }
 </script>
 

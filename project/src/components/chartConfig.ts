@@ -10,5 +10,5 @@ export const data = {
 export const options = {
   responsive: true,
   maintainAspectRatio: true,
-  aspectRatio: 1|2,
+  aspectRatio: 3,
 }
