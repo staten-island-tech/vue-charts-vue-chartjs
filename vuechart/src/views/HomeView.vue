@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="card">
-         <p><h3 >{{newcard.street}}     </h3></p>
+         <p>{{street}}</p>
       <!--:key="" --></div>
 
     </div>
@@ -10,6 +10,9 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  newcard: Object
+})
 const URL = `https://data.cityofnewyork.us/resource/uiay-nctu.json`
 async function getData(){
   try {
@@ -21,17 +24,17 @@ async function getData(){
        
       newcards.forEach(a => {
        const street = a.appronstre
-        const borough = a.boroughname
-
-              //console.log(street, borough);
+       const borough = a.boroughname
+        return{
+           street, borough
+        }
+           // console.log(street,"in", borough);
       });
  
   } catch (error) {
       console.log(error,"uh oh");
   }
 }
-
-
 
 getData(URL)
 </script>
@@ -40,8 +43,8 @@ getData(URL)
 
 .card{
   margin: 30px;
-  width: 40rem;
-  height: 40rem;
+width: 100px;
+  height: 100px;
 }
 
 </style>
