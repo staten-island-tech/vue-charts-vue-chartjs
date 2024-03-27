@@ -6,7 +6,6 @@
 </template>
 
 <script setup>
-import { data } from '@/components/chartConfig.ts';
 import { ref, onMounted } from 'vue';
 import StreetCard from "@/components/StreetCard.vue"
 const streets = ref('')

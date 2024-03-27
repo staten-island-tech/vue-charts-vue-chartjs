@@ -5,6 +5,7 @@
 
 <script>
 import { ref, onMounted } from 'vue';
+
 const streets = ref('')
 
 export let manHatt = ref([]);
@@ -19,24 +20,10 @@ async function getData(){
   streets.value = fdata.results;
   console.log(fdata[8]);
 
-  fdata.forEach(el => {
-  if(fdata.appronstre === "Brooklyn"){
-    broOklyn.value.push(el);
-    console.log(broOklyn.value.length);
-  } else if(fdata.appronstre === "Staten Island"){
-    staTenis.value.push(el);
-  } else if(fdata.appronstre === "Manhattan"){
-    manHatt.value.push(el);
-  } else if(fdata.appronstre === "Queens"){
-    queEns.value.push(el);
-  } else {
-    broNx.value.push(el);
-  }
-  });
-
-  console.log(broNx.length);
-  console.log(broOklyn.length);
-  console.log(staTenis.length);
+  
+  console.log(broNx.value.length);
+  console.log(broOklyn.value.length);
+  console.log(staTenis.value.length);
 }
 
 onMounted(()=>{
