@@ -1,10 +1,8 @@
 <template>
   <div class="container">
-
-    <div class="card" :key="newcards.street">
-         <p>{{newcards.street}}</p>
-      <!--:key="" --></div>
-
+    <div class="card" :key="street">
+         <p>{{street}}</p>
+    </div>
     </div>
 
 </template>
@@ -13,6 +11,7 @@
 const props = defineProps({
   newcards: Object,
 })
+
 const URL = `https://data.cityofnewyork.us/resource/uiay-nctu.json`
 async function getData(){
   try {
@@ -21,10 +20,9 @@ async function getData(){
           throw new Error (response.statusText);
       }
       const newcards = await response.json();
-      
-       var street = newcards.appronstre
+        const street = newcards.appronstre
        var borough = newcards.boroughname;
-
+       return street, borough 
        // console.log("street:", street,"borough",borough);
            // console.log   street, borough
       }
