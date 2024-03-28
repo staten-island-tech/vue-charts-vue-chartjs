@@ -19,7 +19,7 @@ const broNxL = broNx.value.length;
 const queEnsL = queEns.value.length;
 const staTenisL = staTenis.value.length;
 
-/* 
+/*
 export default {
   name: 'App',
   components: {
@@ -45,25 +45,29 @@ export default {
 } */
 
 export default {
-  name: 'PieChart',
+  name: 'App',
   components: { Pie },
   data: () => ({
     loaded: false,
-    chartData: null
+    chartData: null,
+    
   }),
   async mounted () {
     this.loaded = false
 
     try {
-      const { fdata } = await fetch('https://data.cityofnewyork.us/resource/uiay-nctu.json')
+      const { fdata } = await fetch('https://data.cityofnewyork.us/resource/uiay-nctu.json');
       this.chartdata = fdata
 
       this.loaded = true
     } catch (error) {
       console.error(error)
     }
+    
   }
 }
+  
+
 </script>
 
 <style scoped>
