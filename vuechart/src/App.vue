@@ -9,9 +9,14 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <nav>
+<<<<<<< Updated upstream:vuechart/src/App.vue
         <RouterLink to="/">homee</RouterLink>
         <RouterLink to="/bar">boroughs</RouterLink>
 
+=======
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/bar">boroughs</RouterLink>
+>>>>>>> Stashed changes:vuechar/src/App.vue
       </nav>
     </div>
   </header>
