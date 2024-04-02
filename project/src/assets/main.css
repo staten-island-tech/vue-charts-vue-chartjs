@@ -1,0 +1,17 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+*, body, html {
+  text-align: center;
+  font-size: 101%;
+}
+
+a{
+  padding: 1%;
+  color: white;
+}
