@@ -6,26 +6,14 @@
 
 <style>
 
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
 </style>
  <script>
- import { Bar } from 'vue-chartjs'
+/*  import { Bar } from 'vue-chartjs'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
- export default {
-  name: 'BarChart',
-  components: { Bar },
-  data: () => ({
-    loaded: false,
-    chartData: null
-  }),
+export default {
+ 
   async mounted () {
     this.loaded = false
 
@@ -37,6 +25,6 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
     } catch (e) {
       console.error(e)
     }
-  }
-}
+  } 
+}*/
 </script>

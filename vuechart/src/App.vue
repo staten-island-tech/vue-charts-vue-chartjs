@@ -9,14 +9,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <nav>
-<<<<<<< Updated upstream:vuechart/src/App.vue
-        <RouterLink to="/">homee</RouterLink>
         <RouterLink to="/bar">boroughs</RouterLink>
 
-=======
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/bar">boroughs</RouterLink>
->>>>>>> Stashed changes:vuechar/src/App.vue
       </nav>
     </div>
   </header>
@@ -25,7 +19,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <style scoped>
 header {
-  line-height: 1.5;
+  line-height: 2.5;
+  width: 200px;
+  text-align: center;
 }
 /* 
 .logo {

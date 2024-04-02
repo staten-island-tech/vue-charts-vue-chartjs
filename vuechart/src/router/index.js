@@ -11,19 +11,10 @@ const router = createRouter({
       component: HomeView
     },
     {
-<<<<<<< Updated upstream:vuechart/src/router/index.js
         path: '/Bar',
         name: 'bar',
         component: Bar
     
-=======
-      path: '/bar',
-      name: 'bar',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/BarChart.vue')
->>>>>>> Stashed changes:vuechar/src/router/index.js
     }
   ]
 })
