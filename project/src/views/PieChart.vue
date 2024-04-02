@@ -24,7 +24,7 @@ export default {
       chartOptions: {
         responsive: true,
         maintainAspectRatio: true,
-        aspectRatio: 1,
+        aspectRatio: 1.5,
       }
     }
   },
@@ -89,10 +89,7 @@ export default {
 </script>
 
 <style scoped>
-*, body, html {
-  height: max-content;
-  width: max-content;
-}
+
 h2 {
   margin: 0 auto;
   padding: 1%;
